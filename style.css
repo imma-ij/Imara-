@@ -1,11 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Poppins", serif;
+        
 }
+
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image:linear-gradient(rgba(152, 154, 141, 0.52),rgba(152, 154, 141, 0.52)),url(Assets/Home\ Background.jpg);
+    background-image:linear-gradient(rgba(243, 244, 239, 0.52),rgba(152, 154, 141, 0.52)),url(Assets/Home\ Background.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -33,5 +36,141 @@ nav img{
     color: black;
     text-decoration: none;
     font-size: 20px;
+    font-weight: 300;  
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 4px;
+  background: black ;
+  display: block;
+  margin: auto;
+  transition: 0.7s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 100%;
+    color: black;
+    position: absolute;
+    text-align: center;
+}
+.text-box h1{
+    font-size: 60px;
+    margin: 50px 0 50px 0;
+}
+.text-box p{
+ font-size: 30px;
+ font-weight: 400;
+ margin: 10px 0 10px;
+}
+.hero-button{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 24px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+hero-button:hover{
+    border: 2px solid white;
+    background: white;
+    transition: 2s;
+}
+@media (max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    nav-links ul li{
+       position: absolute;
+       background: white;
+       height: 100vh;
+       width: 250px;
+       margin-top: 0;
+       margin-bottom: 0;
+       text-align: left;
+       z-index: 4;
+    }
+}
+/*----About Us -----*/
+.about{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.h1 about{
+    font-size: 50;
     font-weight: 300;
 }
+.p about{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 12px;
+}
+.properties {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.h1 properties{
+    font-size: 50;
+    font-weight: 300;
+}
+.p properties{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 12px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.properties-col{
+   flex-basis: 32%;
+   border-radius: 10px;
+   margin-bottom: 5%;
+   text-align: left; 
+}
+.properties-col img{
+    width: 100%;
+    border-radius: 10px; 
+}
+.properties-col p{
+    padding: 0;  
+}
+
+.properties-col h2{
+    margin-top: 14px;
+    margin-bottom: 16px ;
+}
+.properties-col:hover{
+    box-shadow: 0 0 16px 0px  rgb(95, 182, 95);
+}
+@media (max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*----contact----*/
+.contact{
+    margin: 80px auto;
+    width: 100%;
+    background-image: -o-linear-gradient(rgb light rgb(160, 156, 156));
+
+}
+
+
+    
