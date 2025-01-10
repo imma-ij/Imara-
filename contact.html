@@ -32,21 +32,25 @@
     
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.823869086606!2d36.89557667472448!3d-1.279268898708564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f138836259019%3A0xe0153eddcd76e55f!2sUmoja%202%20Terminus!5e0!3m2!1sen!2ske!4v1736539699457!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    <form  method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
-    
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
+    <div class="register">
+        <form>
+            <label for="fname" class="form-label">First name</label><br>
+            <input type="text" class="form-control" placeholder="First Name" aria-label="First-Name"><br><br>
+            <label for="lname" class="form-label">Last name</label><br>
+            <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name"><br><br>
+            <label for="username" class="form-label">User Name</label><br>
+            <input type="text" class="form-control" placeholder="User name" aria-label="User name"><br><br>
+            <label for="lname" class="form-label">E-mail</label><br>
+            <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail"><br><br>
+            <label for="username" class="form-label">Password</label><br>
+            <input type="text" class="form-control" placeholder="Password" aria-label="Password"><br><br>
+            <label for="lname" class="form-label">Password Confirmation</label><br>
+            <input type="text" class="form-control" placeholder="Password Confirmation" aria-label="Password Confirmation"><br><br>
+        </form> 
+      </div>
+        <br><br>
 
-        <label for="message">Message:</label>
-        <input type="message" id="message" name="message" required><br>
-    
-    
-        <button type="submit">Submit</button>
-    </form>
-  
- 
+        <button type="register"  class="form-control btn btn-danger" >Register</button>
 
    </section>
 

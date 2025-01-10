@@ -100,22 +100,32 @@ hero-button:hover{
     }
 }
 /*----About Us -----*/
-.about{
+.row-f {
     width: 100%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
 }
-.h1 about{
-    font-size: 50;
-    font-weight: 300;
+.feature h1{
+    margin-top: 20px 20px;
+    padding: 12;
+    font-size: 200;
+    font-weight: 400;
+    text-align: center;
+    text-align: center;
 }
-.p about{
+.feature p{
     color: black;
     font-size: 20px;
     font-weight: 300;
-    padding: 12px;
+    padding: 16px;
 }
+.feature img{
+    background: fixed;
+    
+}
+
+
 .properties {
     width: 100%;
     margin: auto;
@@ -227,7 +237,7 @@ hero-button:hover{
     width: 100%;
  }
 
- .POST input, .POST textarea {
+ .register input, .register textarea {
     width: 100%;
     padding-left: 16px;
     margin-bottom: 18px;
